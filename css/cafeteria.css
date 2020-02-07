@@ -1,0 +1,58 @@
+* {
+  margin: 0; /*zear a margem externa dos elementos*/
+  padding: 0; /*zerar a margem interna dos elementos*/
+}
+header {
+  /* Vamos adicionar uma imagem de fundo ao cabeçalho */
+  background-image: url("../img/cafe6.jpg");
+  background-position: 0px -100px;
+  height: 400px;
+  transition: ease 2s;
+}
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: "Monoton", cursive;
+  text-align: center;
+  font-size: 80px;
+  padding-top: 100px;
+  text-shadow: 5px 5px 20px rgb(255, 255, 0);
+}
+/* vamos formatar os elementos de li para ficar um ao lado
+do outro com o comando display */
+nav ul li {
+  /* Dispor os links um ao lado do outro */
+  display: inline-block;
+  border: 1px solid rgb(128, 64, 0);
+  margin-left: 100px;
+  margin-right: 100px;
+}
+/*Alinhar os elementos de link ao centro usando text-align:center no nav
+assim tudo que estiver dentro do nav ira o centro*/
+nav {
+  text-align: center;
+  margin-top: 130px;
+  /* A cor utilizada para o fundo da nav foi o rgba, que significa red gree blue e alpha
+  (transparencia), onde o valor mais próximo do 0(zero) é totalmente transparente e 
+  quanto mais proximo do 1 é totalmente solido. Neste caso estamos usando 80% de solidez
+  ou seja, aplicamos 20% de transparencia */
+  background-color: rgba(255, 255, 0, 0.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul li a {
+  color: rgb(128, 64, 0);
+  /* para retirar o sublinhado(underline) dos links utilizaremos o comando text-decoration 
+    com o valor none(nenhum) */
+  text-decoration: none;
+  font-family: "Monoton", cursive;
+  /* aplicação de negrito a letra */
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: rgb(128, 64, 0);
+  padding-left: 10px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
