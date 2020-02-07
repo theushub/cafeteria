@@ -22,7 +22,7 @@ do outro com o comando display */
 nav ul li {
   /* Dispor os links um ao lado do outro */
   display: inline-block;
-  border: 1px solid rgb(128, 64, 0);
+  /* border: 1px solid rgb(128, 64, 0); */
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -30,7 +30,7 @@ nav ul li {
 assim tudo que estiver dentro do nav ira o centro*/
 nav {
   text-align: center;
-  margin-top: 130px;
+  margin-top: 132px;
   /* A cor utilizada para o fundo da nav foi o rgba, que significa red gree blue e alpha
   (transparencia), onde o valor mais próximo do 0(zero) é totalmente transparente e 
   quanto mais proximo do 1 é totalmente solido. Neste caso estamos usando 80% de solidez
@@ -54,5 +54,26 @@ nav ul li a:hover {
   text-decoration: underline;
   color: rgb(128, 64, 0);
   padding-left: 10px;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0);
+}
+
+/* Criação da formatação do rodapé(footer) */
+footer {
+  background-color: rgba(128, 64, 0, 0.6);
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-family: "Monoton", cursive;
+  padding-top: 20px;
+}
+
+div ul li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+}
+div a {
+    color:blue;
+    text-decoration: none;
 }
