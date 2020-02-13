@@ -34,7 +34,51 @@
     </header>
 
     <!-- A estrutura da area main fica reservada ao conteúdo das páginas especificas -->
-    <main></main>
+    <main>
+      <h2>Contato</h2>
+
+      <form action="confirmacao.html">
+        <label>Nome*</label>
+        <input type="text" name="nome" placeholder="Nome completo" required />
+
+        <label>E-mail *</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="exenplo@dominio.com.br"
+          required
+        />
+
+        <label>Telefone</label>
+        <input type="tel" name="telefone" />
+
+        <label>Sexo</label>
+        <span id="sexo">
+          <input type="radio" name="sexo" value="Masculino" /> Masculino
+          <input type="radio" name="sexo" value="Feminino" /> Feminino
+          <input type="radio" name="sexo" value="Outros" /> Outros
+        </span>
+
+        <select name="assunto">
+          <option value="selecione">selecione o assunto</option>
+          <option value="elogio">elogio</option>
+          <option value="sugestão">sugestão</option>
+          <option value="reclamação">reclamação</option>
+          <option value="problemas">problemas</option>
+        </select>
+
+        <label>mensagem</label>
+        <textarea name="mensagem"></textarea>
+
+        <span id="check"
+          ><input type="checkbox" name="newsletter" />
+          Desejo receber mensagens e noticias sobre promoções e eventos em meu
+          e-mail e telefone.
+        </span>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </main>
 
     <!-- 
         Criação da area do rodapé com o comando footer, esta área se destina a exibição
